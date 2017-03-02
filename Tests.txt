@@ -1,0 +1,39 @@
+trie> add hans 23
+trie> add beate 2
+trie> add reiner 3
+trie> add
+Error! No command!
+Error! No number!
+trie> add hansolo 100
+trie> trie
++(b(e(a(t(e[2]))))h(a(n(s[23](o(l(o[100]))))))r(e(i(n(e(r[3]))))))
+trie> add hansololo 1
+trie> trie
++(b(e(a(t(e[2]))))h(a(n(s[23](o(l(o[100](l(o[1]))))))))r(e(i(n(e(r[3]))))))
+trie> add hani 4
+trie> add hana 2
+trie> add hanna 6
+trie> change hansolo 2
+trie> delete hansolo
+trie> delete hansololo
+trie> trie
++(b(e(a(t(e[2]))))h(a(n(a[2]i[4]n(a[6])s[23])))r(e(i(n(e(r[3]))))))
+trie> points beate
+2
+trie> points hansolo
+Error! 'hansolo' is not in the trie.
+trie> n
+trie> trie
++
+trie> add ADFAS
+Error! Name does not have the correct Form.
+Error! No number!
+trie> add dsakfjk adsfjlk
+Error! No number!
+trie> change dsaf dsfa
+Error! No number!
+trie> change adf
+Error! No number!
+trie> change dsfj 123
+Error! 'dsfj' is not already in the trie.
+trie> quit
